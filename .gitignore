@@ -1,1 +1,4 @@
-data/*
+data/
+*.csv
+*.xlsx
+*.xlsxm
