@@ -42,7 +42,7 @@ ARCGIS_ITEM_URL = (
     f"{OREGON_EVACUATION_ITEM_ID}"
 )
 
-DEFAULT_OUTPUT_PATH = Path("oregon_evacuation_zones.geojson")
+DEFAULT_OUTPUT_PATH = Path("data/oregon_evacuation_zones.geojson")
 DEFAULT_TIMEOUT_SECONDS = 30
 DEFAULT_BATCH_SIZE = 200
 
