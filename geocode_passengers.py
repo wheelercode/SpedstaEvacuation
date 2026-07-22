@@ -9,7 +9,7 @@ The module does NOT determine evacuation zones. It leaves evacuation fields
 blank so a later spatial-analysis module can populate them.
 
 Input expected:
-    spedsta_passengers.csv
+    data/spedsta_passengers.csv
 
 Required columns:
     profile_id
@@ -22,9 +22,9 @@ Dependency:
     pip install requests
 
 Examples:
-    python geocode_passengers.py spedsta_passengers.csv
-    python geocode_passengers.py spedsta_passengers.csv -o passenger_evacuation_report.csv
-    python geocode_passengers.py spedsta_passengers.csv --prepare-only
+    python geocode_passengers.py data/spedsta_passengers.csv
+    python geocode_passengers.py data/spedsta_passengers.csv -o passenger_evacuation_report.csv
+    python geocode_passengers.py data/spedsta_passengers.csv --prepare-only
 
 Privacy note:
     This sends address text, but not passenger names, phone numbers, email
@@ -633,7 +633,7 @@ def parse_args() -> argparse.Namespace:
         "-o",
         "--output",
         type=Path,
-        default=Path("passenger_evacuation_report.csv"),
+        default=Path("data/passenger_address_coordinates.csv"),
         help="Output report CSV.",
     )
     parser.add_argument(

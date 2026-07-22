@@ -7,10 +7,10 @@ Install:
     python -m pip install openpyxl
 
 Run:
-    python build_manual_address_review_fixed.py passenger_evacuation_report.csv
+    python build_manual_address_review_fixed.py data/passenger_evacuation_report.csv
 
 Custom output:
-    python build_manual_address_review_fixed.py passenger_evacuation_report.csv --output manual_address_review.xlsx
+    python build_manual_address_review_fixed.py data/passenger_evacuation_report.csv --output manual_address_review.xlsx
 """
 
 from __future__ import annotations

@@ -11,10 +11,10 @@ Install:
     python -m pip install requests shapely pyproj openpyxl
 
 Run:
-    python build_evacuation_report_fixed.py passenger_evacuation_report.csv
+    python build_evacuation_report_fixed.py data/passenger_evacuation_report.csv
 
 Custom output:
-    python build_evacuation_report_fixed.py passenger_evacuation_report.csv --output evacuation_call_report.xlsx
+    python build_evacuation_report_fixed.py data/passenger_evacuation_report.csv --output evacuation_call_report.xlsx
 """
 
 from __future__ import annotations
@@ -56,11 +56,11 @@ FALLBACK_LAYER_URL = (
     "Fire_Evacuation_Areas_Public/FeatureServer/0"
 )
 
-DEFAULT_OUTPUT_PATH = Path("evacuation_call_report.xlsx")
-DEFAULT_ADDRESS_REPORT_PATH = Path("passenger_evacuation_report.csv")
-DEFAULT_PASSENGER_SOURCE_PATH = Path("spedsta_passengers.csv")
-DEFAULT_GEOCODER_MODULE_PATH = Path("geocode_passengers.py")
-DEFAULT_GEOJSON_CACHE_PATH = Path("oregon_evacuation_areas.geojson")
+DEFAULT_OUTPUT_PATH = Path("data/evacuation_call_report.xlsx")
+DEFAULT_ADDRESS_REPORT_PATH = Path("data/passenger_evacuation_report.csv")
+DEFAULT_PASSENGER_SOURCE_PATH = Path("data/spedsta_passengers.csv")
+DEFAULT_GEOCODER_MODULE_PATH = Path("data/geocode_passengers.py")
+DEFAULT_GEOJSON_CACHE_PATH = Path("data/oregon_evacuation_areas.geojson")
 DEFAULT_TIMEOUT_SECONDS = 60
 DEFAULT_BATCH_SIZE = 200
 DEFAULT_MAX_PROXIMITY_MILES = 10.0
