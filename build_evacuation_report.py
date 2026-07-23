@@ -11,10 +11,10 @@ Install:
     python -m pip install requests shapely pyproj openpyxl
 
 Run:
-    python build_evacuation_report_fixed.py data/passenger_evacuation_report.csv
+    python build_evacuation_report.py data/passenger_address_coordinates.csv
 
 Custom output:
-    python build_evacuation_report_fixed.py data/passenger_evacuation_report.csv --output evacuation_call_report.xlsx
+    python build_evacuation_report.py data/passenger_address_coordinates.csv --output evacuation_call_report.xlsx
 """
 
 from __future__ import annotations
